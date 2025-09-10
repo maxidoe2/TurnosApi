@@ -38,8 +38,7 @@ Incluye CRUD completo, validaciones, autenticación **JWT** y documentación con
 ## ▶️ Cómo correr localmente
 
 1. **Clonar repo**
-```bash
-git clone https://github.com/TU_USUARIO/turnos-api.git
+git clone https://github.com/maxidoe2/TurnosApi.git
 cd turnos-api/TurnosApi
 Restaurar paquetes y crear DB
 dotnet restore
