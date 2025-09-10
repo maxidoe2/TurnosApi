@@ -77,14 +77,16 @@ Clave JWT manejada con user-secrets (no subir a GitHub).
 
 En producción: usar DB gestionada (Postgres/SQL Server) y rotar la JWT Key.
 
-📸 Screenshots
-Swagger con endpoints.
+## 📸 Screenshots
 
+### Swagger con endpoints
+![Swagger UI](docs/SwaggerEndpoints.png)
 
-Login + botón Authorize.
+### DB Browser mostrando tablas
+![DB Browser](docs/TablasDB.png)
 
-DB Browser mostrando tablas.
-
+### Proceso login/auth con Swagger
+![Auth Process](docs/AuthNET.png)
 
 💡 Este proyecto me permitió:
 
