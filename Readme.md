@@ -40,12 +40,15 @@ Incluye CRUD completo, validaciones, autenticación **JWT** y documentación con
 1. **Clonar repo**
 git clone https://github.com/maxidoe2/TurnosApi.git
 cd turnos-api/TurnosApi
+
 Restaurar paquetes y crear DB
 dotnet restore
 dotnet ef database update
+
 Configurar JWT Key (solo dev)
 dotnet user-secrets init
 dotnet user-secrets set "Jwt:Key" "clave-secreta-dev-muy-larga"
+
 Ejecutar
 dotnet run
 # o con hot reload
@@ -66,13 +69,14 @@ SQLite local: `Data Source=turnos.db`.
 
 Seeds mínimos (Paciente #1, Médico #1, Turno #1).
 
-🧰 Scripts útiles
+## 🧰Scripts útiles
+
 # Crear nueva migración
 dotnet ef migrations add NombreMigracion
 # Aplicar migraciones
 dotnet ef database update
 🛡️ Seguridad
-Clave JWT manejada con user-secrets (no subir a GitHub).
+Clave JWT manejada con user-secrets
 
 En producción: usar DB gestionada (Postgres/SQL Server) y rotar la JWT Key.
 
